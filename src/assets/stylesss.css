@@ -1,0 +1,67 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a3c6e;
+    color:black;
+    padding: 10px 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color:white
+}
+.menu{
+    display: flex;
+    gap:20px;
+    background: transparent;
+}
+
+.menu a{
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+    background: transparent;
+    color:white
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.logout button{
+    background-color: red;
+    color: black;
+    border:none;
+    padding:8px 16px;
+    cursor:pointer;
+    font-size: 16px;
+}
+.logout button:hover{
+    background-color: black;
+    color: aqua;
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex:1;
+}
+footer{
+    background-color: #1a3c6e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    /* margin-top: 50%; */
+}
+.copyright{
+   /* width:200px ;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   margin-left: 45%;
+   border-radius: 10px; */
+   background:transparent;
+}
