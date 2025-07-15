@@ -1,54 +1,62 @@
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1a3c6e;
-    color:black;
+    color: black;
     padding: 10px 20px;
 }
-.title{
+
+.title {
     font-size: 20px;
     font-weight: bold;
     background: transparent;
-    color:white
+    color: white
 }
-.menu{
+
+.menu {
     display: flex;
-    gap:20px;
+    gap: 20px;
     background: transparent;
 }
 
-.menu a{
-    color:black;
+.menu a {
+    color: black;
     text-decoration: none;
     font-size: 16px;
     background: transparent;
-    color:white
+    color: white
 }
-.menu a:hover{
+
+.menu a:hover {
     text-decoration: underline;
 }
-.logout button{
+
+.logout button {
     background-color: red;
     color: black;
-    border:none;
-    padding:8px 16px;
-    cursor:pointer;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
     font-size: 16px;
 }
-.logout button:hover{
+
+.logout button:hover {
     background-color: black;
     color: aqua;
 }
-.mainContainer{
+
+.mainContainer {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-main{
-    flex:1;
+
+main {
+    flex: 1;
 }
-footer{
+
+footer {
     background-color: #1a3c6e;
     color: white;
     text-align: center;
@@ -56,12 +64,142 @@ footer{
     font-size: 14px;
     /* margin-top: 50%; */
 }
-.copyright{
-   /* width:200px ;
+
+.copyright {
+    /* width:200px ;
    display: flex;
    text-align: center;
    justify-content: center;
    margin-left: 45%;
    border-radius: 10px; */
-   background:transparent;
+    background: transparent;
+}
+
+/*dashboard banner css*/
+.dashboard-banner {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to right, #1a3c6e, #9333ea);
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard-banner-content {
+    text-align: center;
+    background: transparent;
+}
+
+.dashboard-banner-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: transparent;
+    color: white;
+}
+
+.dashboard-banner-content p {
+    font-size: 1.2em;
+    background: transparent;
+    color: white;
+}
+
+/*common titles css*/
+.common-titles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.common-titles-content {
+    text-align: center;
+    background: transparent;
+}
+
+.common-titles-content h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #1a3c6e;
+}
+
+.common-titles-content p {
+    font-size: 1.2em;
+    background: transparent;
+    color: #1a3c6e;
+}
+
+/*our programs card*/
+.our-programs-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.our-programs-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.our-programs-card-content {
+    padding: 16px;
+    background: transparent;
+}
+
+.our-programs-card-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    background: white;
+}
+
+.our-programs-card-description {
+    font-size: 14px;
+    color: #555;
+    background: transparent;
+}
+
+.our-programs {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+}
+
+/* features card*/
+.common-features-card {
+    width: 25%;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.common-features-card img{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+.common-features-card-title{
+    font-size: 14px;
+    background: white;
+    color: #1a3c6e;
+}
+.common-features{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    background: transparent;
+    font-size: 18px;
+}
+.common-features-card-content {
+    padding: 16px;
+    background: transparent;
 }
