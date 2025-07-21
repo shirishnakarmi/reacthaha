@@ -171,35 +171,102 @@ footer {
 }
 
 /* features card*/
-.common-features-card {
-    width: 25%;
-    height: 100px;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: black;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-}
-.common-features-card img{
-    width: 30%;
-    height: 100%;
-    object-fit: cover;
-}
-.common-features-card-title{
-    font-size: 14px;
-    background: white;
-    color: #1a3c6e;
-}
-.common-features{
-    width: 100%;
-    padding: 20px;
+.our-values-card {
     display: flex;
-    gap: 10px;
-    background: transparent;
-    font-size: 18px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #3b5998;
+    font-size: 1em;
 }
-.common-features-card-content {
-    padding: 16px;
+
+.our-values-card .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: transparent;
+}
+
+.our-values-card .text {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    background: transparent;
+}
+
+.our-values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: transparent;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.our-courses-card {
+    min-height: 300px;
+    width: 200px;
+    background: #1a3c6e;
+    border-radius: 8px;
+    margin: 30px
+}
+
+.our-courses-card img {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 8px 8px 0px 0px;
+    
+
+}
+
+.courses-banner {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px;
+}
+
+.our-courses-description {
+    margin: 3px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: wheat;
+    min-width: 95%;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+.common-year {
+    margin: 3px;
+    padding: 2px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.courses-card-mini {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    color: white;
+
+}
+.our-courses-card img:hover{
+    opacity: 60%;
+}
+.our-courses-card:hover{
+    scale: 110%;
+}
+.common-year span{
     background: transparent;
 }
