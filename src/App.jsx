@@ -8,6 +8,9 @@ import About from './About.jsx'
 import Admissions from './Admissions.jsx'
 import Contacts from './Contacts.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// import { Outlet } from 'react-router-dom'
+// import Navbar from './compo/navbar.jsx'
+// import Foot from './compo/foot.jsx'
 
 function App() {
 
@@ -26,8 +29,14 @@ function App() {
         <Footer />
       </div>
     </BrowserRouter>
+    // <>
+    // <Navbar/>
+    // <i>Global Content</i>
+    // <Outlet/>
+    // <Foot/>
+    // </>
 
   )
 }
 
-export default App
+export default App;

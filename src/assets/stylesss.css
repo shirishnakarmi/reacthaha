@@ -209,9 +209,11 @@ footer {
 .our-courses-card {
     min-height: 300px;
     width: 200px;
-    background: #1a3c6e;
+    background: transparent;
     border-radius: 8px;
-    margin: 30px
+    margin: 30px;
+    box-shadow: 0 2px 8px gray;
+    overflow: hidden;
 }
 
 .our-courses-card img {
@@ -231,13 +233,11 @@ footer {
 }
 
 .our-courses-description {
-    margin: 3px;
-    padding: 2px;
-    border: 1px solid black;
-    border-radius: 2px;
-    background-color: wheat;
-    min-width: 95%;
-    text-align: center;
+   
+   
+   
+  
+    text-align: right;
     color: black;
     margin-top: 20px;
 }
@@ -248,7 +248,7 @@ footer {
     background: transparent;
     display: flex;
     justify-content: center;
-    color: white;
+    color: black;
     margin-top: 20px;
 }
 
@@ -258,15 +258,65 @@ footer {
     flex-direction: column;
     padding: 10px;
     align-items: center;
-    color: white;
+    color: black;
 
 }
 .our-courses-card img:hover{
     opacity: 60%;
+    scale: 110%;
 }
 .our-courses-card:hover{
     scale: 110%;
 }
 .common-year span{
     background: transparent;
+}
+.our-courses-title{
+    font-size: 20px;
+    color:black;
+    background: transparent;
+}
+/*popup modal*/
+.modal-overlay{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+/*modal box*/
+.modal-box{
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+/*title*/
+.modal-title{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+/*close button(x)*/
+.modal-close{
+    position: absolute;
+    top:10px;
+    right: 15px;
+    font-size: 22px;
+    border: none;
+    background: transparent;
+    cursor:pointer;
+    color: #555;
+}
+/*content*/
+.modal-content{
+    font-size: 16px;
 }
